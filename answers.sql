@@ -215,3 +215,43 @@ Write a query that counts the number of orders shipped to California.
 
 
 SELECT COUNT(*) FROM orders WHERE shipto_state = 'CA';
+
+
+==========
+16
+
+-----
+
+Write a query that shows the total amount of money spent across all melon
+orders.
+
+-----
+
+
+SELECT sum(order_total) FROM orders;
+
+
+==========
+17
+
+-----
+
+Write a query that shows the average order cost.
+
+-----
+
+
+SELECT AVG(order_total) FROM orders;
+
+
+==========
+18
+
+-----
+
+Write a query that shows the order total that was lowest in price.
+
+-----
+
+
+SELECT MIN(order_total) FROM orders;
